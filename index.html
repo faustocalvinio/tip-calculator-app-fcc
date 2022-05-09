@@ -2,43 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Tip calculator app | Fausto Calviño </title>
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
+  <!-- <p>SPLITTER</p> -->
+  <main class="app">
+    <div class="bill">
+      <p class="bill-text">Bill</p>
+      <input type="number" placeholder="$">
+      <p class="bill-text">Select Tip %</p>
+      <ul class="options-list"> 
+        <li class="options-item">5%</li>
+        <li class="options-item">10%</li>
+        <li class="options-item">15%</li>
+        <li class="options-item">25%</li>
+        <li class="options-item">50%</li>
+        <li class="options-item">
+          <input type="number" placeholder="Custom" class="options-item">
+        </li>
+      </ul>
+      <p class="bill-text">Number of People </p>
+      <input type="number">
+    </div>
+    <div class="calculation">
+      <div class="tip-person-cont">
+        <p>Tip Amount</p>
+        <p class="per-person">/ person</p>
+        <p>$</p>
+      </div>
+      <div class="total-person-cont">
+        <p>Total</p>
+        <p class="per-person">/ person</p>
+        <p>$</p>
+      </div>
+      <button onclick="alert('a')">Reset</button>
+    </div>
+  </main>
+ 
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
+  <script src="./scripts/main.js"></script>
 </body>
 </html>

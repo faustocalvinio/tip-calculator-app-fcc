@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    --strongCyan: hsl(172, 67%, 45%);
+    --veryDarkCyan: hsl(183, 100%, 15%);
+    --darkGrayishCyan: hsl(186, 14%, 43%);
+    --grayishCyan: hsl(184, 14%, 56%);
+    --lightGrayishCyan: hsl(185, 41%, 84%);
+    --verylightGrayishCyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--lightGrayishCyan);
+    font-family: 'Space Mono',sans-serif;
+}
+.app{
+    width: 35rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+.bill{
+    background-color: aqua;
+    width: 22rem;
+}
+.bill-text{
+    color: var(--grayishCyan);
+    font-weight: 700;
+}
+.options-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.options-item{
+    background-color: var(--veryDarkCyan);
+    width: 4rem;
+    padding: .5rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+}
+.calculation{
+    background-color: var(--veryDarkCyan);
+    width: 22rem;
+
+    border-radius: .7rem;
+
+}
+.tip-person-cont{
+    border: 1px solid red;
+}
+.total-person-cont{
+    border: 1px solid red;
+}
+.per-person{
+    color: var(--grayishCyan);
+}
+.attribution{
+    position: absolute;
+    top: 88%;
+    left: 4%;
+}
