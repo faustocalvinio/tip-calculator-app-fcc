@@ -27,18 +27,34 @@ body{
     gap: 2rem;
 }
 .bill{
-    background-color: aqua;
-    width: 22rem;
+    /* background-color: aqua; */
+    width: 20rem;
 }
 .bill-text{
     color: var(--grayishCyan);
     font-weight: 700;
+}
+.bill-amount-cont{
+    background-color: var(--verylightGrayishCyan);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--grayishCyan);
+}
+.bill-amount-cont input{
+    float: right;
+    border: none;
+    background-color: var(--verylightGrayishCyan);
+}
+.bill-amount-cont input::placeholder{
+    float: right;
 }
 .options-list{
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    padding: 0;
 }
 .options-item{
     background-color: var(--veryDarkCyan);
@@ -47,6 +63,12 @@ body{
     text-align: center;
     color: var(--white);
     font-weight: 700;
+}
+.options-item input{
+    width: 4rem;
+    height: 1rem;
+    border: none;
+    padding: 0;
 }
 .calculation{
     background-color: var(--veryDarkCyan);
