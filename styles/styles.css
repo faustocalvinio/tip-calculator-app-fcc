@@ -11,6 +11,7 @@
 }
 
 body{
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,8 +19,23 @@ body{
     background-color: var(--lightGrayishCyan);
     font-family: 'Space Mono',sans-serif;
 }
+.splitter-cont{
+    position: absolute;
+    transform: translateY(-14rem);
+    /* border: 1px solid red; */
+    
+}
+.splitter{
+    margin: 0;
+    font-size: 1rem;
+    color: var(--veryDarkCyan);
+    font-weight: 700;
+    /* border: 1px solid purple; */
+    letter-spacing: .5rem;
+    
+}
 .app{
-    width: 35rem;
+    width: 50rem;
     background-color: var(--white);
     padding: 2rem;
     border-radius: 1rem;
@@ -28,7 +44,7 @@ body{
 }
 .bill{
     /* background-color: aqua; */
-    width: 20rem;
+    width: 23rem;
 }
 .bill-text{
     color: var(--grayishCyan);
@@ -45,9 +61,16 @@ body{
     float: right;
     border: none;
     background-color: var(--verylightGrayishCyan);
+    font-weight: 600;
+    color: var(--veryDarkCyan);
+    float: right;
+    width: 3rem;
+    /* width: fit-content; */
 }
 .bill-amount-cont input::placeholder{
     float: right;
+    font-weight: 600;
+    color: var(--veryDarkCyan);
 }
 .options-list{
     list-style: none;
@@ -56,35 +79,79 @@ body{
     gap: 1rem;
     padding: 0;
 }
-.options-item{
+.input-perc{
+    width: 4rem;
+    height: 1rem;
+    border: none;
+    padding: 0;
+    background-color: var(--veryDarkCyan);
+    width: 4rem;
+    height: 2rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    color: var(--white);
+    text-align: center  ;
+    font-weight: 700;
+}
+.percentage{
+    color: var(--white);
     background-color: var(--veryDarkCyan);
     width: 4rem;
     padding: .5rem;
     text-align: center;
     color: var(--white);
     font-weight: 700;
-}
-.options-item input{
-    width: 4rem;
-    height: 1rem;
     border: none;
-    padding: 0;
+    border-radius: .2rem;
+    cursor: pointer;
 }
 .calculation{
     background-color: var(--veryDarkCyan);
-    width: 22rem;
-
+    width: 23rem;
+position: relative;
     border-radius: .7rem;
+    padding: 2rem;
 
 }
 .tip-person-cont{
     border: 1px solid red;
+    position: relative;
+}
+.tip-total-amount{
+    color:#fff ;
+    margin: 0;
 }
 .total-person-cont{
     border: 1px solid red;
+    position: relative;
 }
 .per-person{
     color: var(--grayishCyan);
+    margin: 0;
+
+}
+.reset-btn{
+    position: absolute;
+    bottom: 1rem;
+    align-self: center;
+    left: 4rem;
+}
+.tip-per-person-amount{
+    color: var(--strongCyan);
+    position: absolute;
+    right: 1rem;
+    top: -2rem;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.total-per-person-amount{
+    color: var(--strongCyan);
+    position: absolute;
+    right: 1rem;
+    top: -2rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 .attribution{
     position: absolute;
