@@ -35,7 +35,7 @@ body{
     
 }
 .app{
-    width: 50rem;
+    width: 40rem;
     background-color: var(--white);
     padding: 2rem;
     border-radius: 1rem;
@@ -52,10 +52,11 @@ body{
 }
 .bill-amount-cont{
     background-color: var(--verylightGrayishCyan);
-    width: 100%;
+    width: 18rem;
     display: flex;
     justify-content: space-between;
     color: var(--grayishCyan);
+    padding: .5rem 1rem;
 }
 .bill-amount-cont input{
     float: right;
@@ -66,11 +67,14 @@ body{
     float: right;
     width: 3rem;
     /* width: fit-content; */
+    font-family: 'Space Mono',sans-serif;
+
 }
 .bill-amount-cont input::placeholder{
     float: right;
     font-weight: 600;
     color: var(--veryDarkCyan);
+    
 }
 .options-list{
     list-style: none;
@@ -84,7 +88,7 @@ body{
     height: 1rem;
     border: none;
     padding: 0;
-    background-color: var(--veryDarkCyan);
+    background-color: var(--verylightGrayishCyan);
     width: 4rem;
     height: 2rem;
     border-radius: .2rem;
@@ -92,11 +96,14 @@ body{
     color: var(--white);
     text-align: center  ;
     font-weight: 700;
+    width: 5.5rem;
+    font-weight: bold;
+
 }
 .percentage{
     color: var(--white);
     background-color: var(--veryDarkCyan);
-    width: 4rem;
+    width: 5.5rem;
     padding: .5rem;
     text-align: center;
     color: var(--white);
@@ -104,6 +111,7 @@ body{
     border: none;
     border-radius: .2rem;
     cursor: pointer;
+    font-family: 'Space Mono',sans-serif;
 }
 .calculation{
     background-color: var(--veryDarkCyan);
@@ -134,7 +142,14 @@ position: relative;
     position: absolute;
     bottom: 1rem;
     align-self: center;
-    left: 4rem;
+    left: 2.5rem;
+    background-color: var(--strongCyan);
+    width: 15rem;
+    color: var(--veryDarkCyan);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    height: 2rem;
 }
 .tip-per-person-amount{
     color: var(--strongCyan);
@@ -153,6 +168,7 @@ position: relative;
     font-size: 2rem;
     font-weight: 700;
 }
+
 .attribution{
     position: absolute;
     top: 88%;
